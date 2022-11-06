@@ -15,7 +15,7 @@
         u = DaoUsuario.buscarUsuario(email);
 
         if(u.getPerfil() == 0){
-            u = new Usuario(nome,email,pwd,1);        
+            u = new Usuario(nome,email,pwd,2);
             if(DaoUsuario.inserir(u)){
                 response.sendRedirect("login.jsp");
             }else{

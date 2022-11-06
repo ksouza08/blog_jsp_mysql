@@ -155,7 +155,7 @@
                         if(lista.size() > 0){
                             for(Comentario c: lista){
                                 
-                                if(u.getPerfil() == 1 
+                                if(u.getPerfil() == 1  
                                         || c.getStatus() == 1 
                                         || (c.getStatus() == 0 && c.getUsuario().getIdUsuario() == u.getIdUsuario())){                                    
                                     
